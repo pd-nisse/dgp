@@ -33,4 +33,8 @@ message CameraIntrinsics {
   double cx = 3;
   double cy = 4;
   double skew = 5;
+
+  // Used to store distortion coefficients
+  // or other camera specific data
+  map<string, string> attributes = 6;
 }
